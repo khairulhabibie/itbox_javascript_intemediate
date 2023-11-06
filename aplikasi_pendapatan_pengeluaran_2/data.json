@@ -1,0 +1,26 @@
+{
+  "incomes": [
+    {
+      "name": "Gaji Bulan",
+      "total": 5000,
+      "category": "income"
+    },
+    {
+      "name": "uang cair",
+      "total": 3000,
+      "category": "income"
+    }
+  ],
+  "expenses": [
+    {
+      "name": "Bayar Listrik",
+      "total": 1000,
+      "category": "expense"
+    },
+    {
+      "name": "Bayar Tagihan",
+      "total": 500,
+      "category": "expense"
+    }
+  ]
+}
