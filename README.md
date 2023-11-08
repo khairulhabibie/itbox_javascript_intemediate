@@ -5,5 +5,7 @@
 #Belajar Menjadi Full Stack JavaScript Web Developer Tingkat Menengah
 // Studi Kasus MVC
 
-1. Aplikasi Pendapatan dan Pengeluaran
-2. Aplikasi Daftar Lagu
+Aplikasi Pendapatan dan Pengeluaran_1
+Aplikasi Pendapatan dan Pengeluaran_1
+Aplikasi Daftar Lagu
+Aplikasi Perternakan dan Unggas
