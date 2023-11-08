@@ -1,26 +1,32 @@
 [
-  {
-    "id": 1,
-    "name": "Favorite Music",
-    "songs": [
-      {
-        "id": 1,
-        "name": "Paint my Love",
-        "duration": 180,
-        "genre": "Pop"
-      },
-      {
-        "id": 2,
-        "name": "Songs Rock",
-        "duration": 120,
-        "genre": "Rock"
-      },
-      {
-        "id": 3,
-        "name": "Pop Songs",
-        "duration": 100,
-        "genre": "Pop"
-      }
-    ]
-  }
+   {
+      "id": 1,
+      "name": "Favorite Music",
+      "songs": [
+         {
+            "id": 1,
+            "name": "Paint my Love",
+            "duration": 180,
+            "genre": "Pop"
+         },
+         {
+            "id": 2,
+            "name": "Songs Rock",
+            "duration": 120,
+            "genre": "Rock"
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "name": "Rock Collection",
+      "songs": [
+         {
+            "id": "Rock Songs",
+            "name": 1,
+            "duration": 123,
+            "genre": "Rock"
+         }
+      ]
+   }
 ]

@@ -28,8 +28,14 @@ class Playlist {
     let playlists = this.getPlaylist();
     const [name, genre, duration, playlistName] = params;
     playlists.forEach((playlist) => {
-      if ([playlist.name == playlistName]) {
-        let id = playlist.songs[playlist.songs.length - 1].id + 1;
+      if (playlist.name == playlistName) {
+        let id;
+        if (playlist.songs.length === 0) {
+          id = 1;
+        } else {
+          id = playlist.songs[playlist.songs.length - 1].id + 1;
+        }
+
         if (genre === "Pop") {
           playlist.songs.push(new Pop(id, name, +duration));
         } else if (genre === "Rock") {
@@ -37,7 +43,6 @@ class Playlist {
         }
       }
     });
-    // console.log(playlists[0].songs);
     this.save(playlists);
     console.log(`${name} has been added to ${playlistName}.`);
   }
@@ -45,6 +50,34 @@ class Playlist {
   static show() {
     let data = this.getPlaylist();
     console.log(data);
+  }
+
+  static remove(params) {
+    let playlists = this.getPlaylist();
+    const [songName, playlistName] = params;
+
+    playlists = playlists.map((playlist) => {
+      if (playlist.name === playlistName) {
+        playlist.songs = playlist.songs.filter(
+          (song) => song.name !== songName
+        );
+        return playlist;
+      } else {
+        playlist;
+      }
+    });
+    this.save(playlists);
+    console.log(`${songName} has been removed from ${playlistName}`);
+  }
+
+  static make(params) {
+    let playlists = this.getPlaylist();
+    let id = playlists[playlists.length - 1].id + 1;
+    let [name] = params;
+    playlists.push(new Playlist(id, name));
+
+    this.save(playlists);
+    console.log(`${name} has been created`);
   }
 
   static save(data) {
