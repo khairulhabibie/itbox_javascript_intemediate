@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-item {
+  width: 30%;
+}
+
+.random {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.random button {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+}
+.colorButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colorButtonItem button {
+  width: 100%;
+  padding: 8px 16px;
+  color: white;
+}
+
+#btnRed {
+  background-color: crimson;
+}
+
+#btnGreen {
+  background-color: darkgreen;
+}
+#btnBlue {
+  background-color: darkblue;
+}

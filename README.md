@@ -11,3 +11,8 @@ Aplikasi Pendapatan dan Pengeluaran_1
 Aplikasi Daftar Lagu
 Aplikasi Perternakan dan Unggas
 html_dan_css
+aplikasi_lampu_pesta
+    - agenda:
+    --lampu pesta
+    --kuitansi cetak
+    --hemat pangkal kaya 
