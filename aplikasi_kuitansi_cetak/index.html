@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuitansi Cetak</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-item">
+        <div class="form-header">
+          <h1>kuitansi cetak</h1>
+        </div>
+        <hr />
+        <div class="form-item">
+          <label for="nama">Nama</label>
+          <input id="nama" type="text" placeholder="Masukkan nama anda." />
+        </div>
+        <div class="form-box">
+          <div class="form-item">
+            <label for="barang">Barang</label>
+            <input
+              id="barang"
+              type="text"
+              placeholder="Masukkan nama barang."
+            />
+          </div>
+          <div class="form-item">
+            <label for="harga">Harga</label>
+            <input id="harga" type="number" placeholder="harga barang." />
+          </div>
+          <div class="form-item">
+            <button id="btnSubmit">Submit</button>
+          </div>
+        </div>
+        <hr />
+        <div class="card-box">
+          <div class="card-header">
+            <h3>Cards :</h3>
+            <span id="namaCard"></span>
+          </div>
+          <div class="card-table">
+            <table border="1" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Nama</th>
+                  <th>Harga</th>
+                </tr>
+              </thead>
+              <tbody id="tBody">
+                <!-- <tr>
+                  <td>1</td>
+                  <td>Laptop</td>
+                  <td>Rp. 10000</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="submit-print"><button id="btnPrint">Cetak</button></div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

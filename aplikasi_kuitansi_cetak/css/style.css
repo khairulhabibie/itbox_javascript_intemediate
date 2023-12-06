@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-item {
+  width: 50%;
+  height: 50vh;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.form-header {
+  color: blue;
+  text-align: center;
+  padding: 8px 0;
+  margin-bottom: 8px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+.form-item input {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.form-item label {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+#btnSubmit {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#btnSubmit:hover {
+  background-color: darkgrey;
+}
+
+.card-box {
+  width: 100%;
+}
+.card-header {
+  text-align: center;
+  margin: 8px 0;
+}
+.card-table {
+  width: 100%;
+}
+.card-table table {
+  width: 100%;
+}
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
